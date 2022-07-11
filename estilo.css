@@ -1,0 +1,20 @@
+.item1 { grid-area: header;
+background-color:blue; }
+.item2 { grid-area: menu;
+background-color:green; }
+.item3 { grid-area: main;
+background-color:pink; }
+.item4 { grid-area: right;
+background-color:orange;}
+.item5 { grid-area: footer;
+background-color:yellow;}
+.container {
+ display: grid;
+ grid-template-areas:
+	'header header header header header header'
+	'menu main main main right right'
+	'menu footer footer footer footer footer';
+ gap: 10px;
+ background-color: gray;
+ padding: 10px;
+}
